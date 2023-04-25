@@ -1,0 +1,21 @@
+html{
+  scroll-behavior: smooth;
+  background: #01223bf6;  /* fallback for old browsers */
+}
+.inicio{
+  background:linear-gradient(rgba(0,0,0, 0.50) 0%, rgba(0,0,0, 0.50) 100%), url("https://st2.depositphotos.com/27201292/50690/i/600/depositphotos_506900292-stock-photo-photograph-of-react-js-code.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.body{
+  height: 100%;
+  box-sizing: border-box;
+}
+.body {
+  overflow: scroll ;  
+
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}

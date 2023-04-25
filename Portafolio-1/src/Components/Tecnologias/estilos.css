@@ -1,0 +1,299 @@
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 10%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.tecnologias h1{
+    font-size: 3em;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+
+.tecnologias h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    transition: transform .5s;
+    border: 1px solid white;
+    display: block;
+    animation: descr 2s ease infinite;
+    transform: scaleX(0);
+}   
+.tecno1{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecno2{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologias button{
+    border: none;
+    background: none;
+    margin: 0 8%;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+
+.icon{
+    height: 10em;
+    width: 10em;
+    transition: all 2s ease;
+}
+
+
+.tecnologias button:hover{
+    transform: translateY(-5px) scale(1.54);
+}
+
+
+.html5{
+    color: rgb(235, 106, 31);
+    animation: html infinite 3s linear;
+}
+
+.css{
+    color: rgb(62, 125, 241);
+    animation: html infinite 3s linear;
+}
+
+
+.git{
+    color: yellow;
+    animation: html infinite 3s linear;
+}
+
+@keyframes html{
+    from{
+        transform: translateX(20px);
+    }
+    to{
+        transform: translateX(-20px);
+    }
+}
+
+
+.sass{
+    color: pink;
+    animation: sass infinite 3s linear;
+}
+
+
+
+.boostrap{
+    color: rgb(114, 19, 192);
+    animation: sass infinite 3s linear;
+}
+
+.git1{
+    color: rgb(238, 231, 231);
+    animation: html infinite 3s linear;
+}
+
+.js{
+    color: yellow;
+    animation: sass infinite 3s linear;
+}
+
+.react{
+    color: rgb(0, 183, 255);
+    animation: react infinite 17s linear;
+}
+
+@keyframes sass{
+    from{
+        transform: translateX(-20px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+
+@keyframes react{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+
+.boton1{
+    display: flex;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 20%;
+    margin-bottom: -4%;
+    margin-right: 3%;
+    top:50px;
+    position: relative;
+}
+
+.lbl-switch{
+    display: flex;
+    width: 6em;
+    height: 1.9em;
+    background-color: #02ee5c;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lbl-switch::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.5s;
+}
+
+
+#btn-switch:checked~ .lbl-switch{
+    background: #e90707;
+}
+
+#btn-switch{
+    display: none;
+}
+
+
+#btn-switch:checked~ .lbl-switch::after{
+    left: 4em;
+}
+
+
+
+.html52{
+    color: rgb(235, 106, 31);
+}
+
+.css2{
+    color: rgb(62, 125, 241);
+}
+
+
+.git2{
+    color: yellow;
+}
+
+.git12{
+    color: rgb(238, 231, 231);
+}
+
+
+
+.sass2{
+    color: pink;
+}
+
+
+
+.boostrap2{
+    color: rgb(114, 19, 192);
+}
+
+
+.js2{
+    color: yellow;
+}
+
+.react2{
+    color: rgb(0, 183, 255);
+}
+
+
+@media screen and (max-width:1300px){
+    .tecnologias button{
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .tecnologias button{
+        margin: 0 3%;
+    }
+}
+
+@media screen and (max-width:840px){
+    .tecnologias button{
+        margin: 0 2.9%;
+    }
+
+    .tecnologias button:hover{
+        transform: translateY(-5px) scale(1.2);
+    }
+
+    .icon{
+        width: 8em;
+        height: 8em;
+    }
+    
+    .lbl-switch{
+        width: 5em;
+    }
+
+    #btn-switch:checked~ .lbl-switch::after{
+        left: 3.2em;
+    }
+}
+
+
+
+@media screen and (max-width:630px){
+    .icon{
+        width: 6em;
+        height: 6em;
+    }
+}
+
+
+@media screen and (max-width:570px){
+    .icon{
+        width: 5em;
+        height: 5em;
+    }
+
+    .boton{
+        top: -10px;
+    }
+}
+
+
+@media screen and (max-width:470px){
+    .tecnologias button{
+        margin: 0 1.9%;
+    }
+    .icon{
+        width: 4em;
+        height: 4em;
+    }
+}

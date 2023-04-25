@@ -1,0 +1,105 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+}
+
+header h1{
+    font-size: 2.4em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.bar{
+    height: 30px;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    top: 65px;
+    display: flex;
+    position: fixed;
+    z-index: 3000;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+}
+nav ul{
+    left: 100%;
+    width: 100%;
+    background-color: rgb(3 86 88);
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: all 2s;
+
+}
+nav ul li{
+    display: block;
+    margin: 2.8em 0;
+    line-height: 2em;
+    align-items: center;
+}
+
+
+#check:checked  ~  ul{
+    left: 0;
+    width: 100%;
+    background-color: rgb(3 86 88);
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: all 2s;
+}
+
+
+
+.Link{
+    font-size: 1em;
+}
+.a-Header{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all 2s;
+    position: relative;
+}
+
+.a-Header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    border: 1px solid white;
+    display: block;
+}
+.a-Header:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+

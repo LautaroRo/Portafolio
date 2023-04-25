@@ -1,0 +1,124 @@
+.container-Mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    color: rgba(240, 248, 255, 0.747);
+    animation: container 3.5s ease;
+
+}
+
+
+.container-Mi h2{
+    animation: container ease 4s;
+    animation-iteration-count: 1;
+    font-size: 3em;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+.container-Mi h2::after,
+.container-Mi h3::after
+{
+    content: "";
+    width: 100%;
+    position: absolute;
+    border: 1px solid white;
+    display: block;
+    animation: after 5s ease;
+    
+}
+
+@keyframes after{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.container-Mi h3{
+    animation: container ease 3s;
+    animation-iteration-count: 1;
+    font-size: 2em;
+    position: relative;
+}
+@keyframes container{
+    from{
+        transform: translatex(-700px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+.btonAnimated{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 10em;
+    animation: boton 2s ease infinite;
+    cursor: pointer;
+    transition: all 1s ease;
+    background-color: white;
+}
+
+
+@keyframes boton{
+    from{
+        transform: translatey(10px);
+    }
+    to{
+        transform: translatey(0);
+    }
+}
+
+
+.btonAnimated:hover{
+    background-color: rgb(39, 39, 39);
+    animation: none;
+    width: 10em;
+}
+
+.arrow{
+    color: black;
+}
+
+.btonAnimated:hover .arrow{
+    color: white;
+    transition: all 1s;
+}
+.container-Pres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container-Pres p{
+    display: flex;
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    width: 70%;
+    font-size: 1.7em;
+}
+
+@media screen and (max-width:1400px){
+    .container-Mi{
+        height: 50%;
+    }
+}
+@media screen and (max-width:470px){
+    .container-Mi h2{
+        font-size: 2em;
+    }
+
+    .container-Mi h3{
+        font-size: 1.5em;
+    }
+}
