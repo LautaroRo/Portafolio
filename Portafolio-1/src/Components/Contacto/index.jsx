@@ -8,7 +8,7 @@ const Contacto = () => {
     <div className='formulario'>
         <h1 className='logo'>Contactame</h1>
         <div className="content">
-            <div className="contact-wrapper">
+            <div className="contact-wrapper" id="contacto">
                 <div className="contact-form">
                     <form action="">
                         <p>

@@ -14,7 +14,7 @@ const Tecnologias = () => {
                 <input type="checkbox" id="btn-switch" onClick={() => setEstado(!estado)}/>
                 <label htmlFor="btn-switch" className='lbl-switch'></label>
             </div>
-            <div className='tecnologias'>
+            <div className='tecnologias' id="tecnologias">
             <h1>Tecnologias</h1>
                 {
                     estado === false
