@@ -7,7 +7,7 @@ const SobreMi = () => {
     <>
         <div className='container-Mi'>
             <h2>Lautaro Rodriguez</h2>
-            <h3>Desarollador front end</h3>
+            <h3>Desarrollador front end</h3>
             <a className='btonAnimated' href='#sobre'><FontAwesomeIcon className='arrow' icon={faArrowDown} /></a>
         </div>
     </>
